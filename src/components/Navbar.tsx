@@ -76,7 +76,7 @@ export default function Navbar() {
           aria-label="Go to home"
         >
           <Image
-            src="/Images/Coop logo no background.png"
+            src="/Coop logo no background.png"
             alt="Coop x Cow Pig"
             width={120}
             height={120}
@@ -137,7 +137,7 @@ export default function Navbar() {
               {/* Logo centered at the top */}
               <div className="flex flex-col items-center pt-8 pb-2">
                 <Image
-                  src="/Images/Coop logo no background.png"
+                  src="/Coop logo no background.png"
                   alt="Coop x Cow Pig"
                   width={120}
                   height={120}

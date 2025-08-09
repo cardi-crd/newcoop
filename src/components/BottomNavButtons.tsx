@@ -16,7 +16,7 @@ export default function BottomNavButtons() {
           }`}
         >
           <Image
-            src="/Images/computer-tower-bold (1).svg"
+            src="/computer-tower-bold (1).svg"
             alt="Menu"
             width={24}
             height={24}
@@ -32,7 +32,7 @@ export default function BottomNavButtons() {
           }`}
         >
           <Image
-            src="/Images/map-pin-area-bold.svg"
+            src="/map-pin-area-bold.svg"
             alt="Location"
             width={24}
             height={24}
@@ -48,7 +48,7 @@ export default function BottomNavButtons() {
           className="flex-1 flex flex-col items-center justify-center py-3 bg-red-500 rounded-full px-4 py-2"
         >
           <Image
-            src="/Images/fork-knife-bold.svg"
+            src="/fork-knife-bold.svg"
             alt="Order"
             width={24}
             height={24}
@@ -64,7 +64,7 @@ export default function BottomNavButtons() {
           }`}
         >
           <Image
-            src="/Images/users-three-bold.svg"
+            src="/users-three-bold.svg"
             alt="About"
             width={24}
             height={24}
@@ -80,7 +80,7 @@ export default function BottomNavButtons() {
           }`}
         >
           <Image
-            src="/Images/mailbox-bold.svg"
+            src="/mailbox-bold.svg"
             alt="Contact"
             width={24}
             height={24}

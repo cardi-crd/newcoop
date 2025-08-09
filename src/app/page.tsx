@@ -41,16 +41,18 @@ Additional Information: ${cateringForm.additionalInfo}
     setShowCateringForm(false);
   };
 
+  const bgClass = theme === 'bagel' ? 'bg-[#46bafc]' : 'bg-black';
+
   return (
-    <div className="min-h-screen bg-[#46bafc]">
+    <div className={`min-h-screen ${bgClass} flex flex-col items-center py-16 px-4 pb-32`}>
       {/* Main Container */}
       <div className="max-w-md mx-auto min-h-screen">
         
         {/* Coop Logo */}
-        <div className="text-center pt-6 pb-6">
+        <div className="text-center pt-2 pb-6">
           <Link href="/" className="inline-block hover:scale-105 transition-transform duration-200 cursor-pointer">
             <Image
-              src="/Images/cooplogo.png"
+              src="/cooplogo.png"
               alt="Coop Logo - Click to go home"
               width={400}
               height={160}
@@ -61,21 +63,25 @@ Additional Information: ${cateringForm.additionalInfo}
         </div>
 
         {/* Catering Section */}
-        <div className="mx-6 mb-4">
-          <div className="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-2xl p-3 shadow-lg border border-amber-200">
-            <div className="flex items-center justify-center space-x-4">
-            <Image
-                src="/Images/coopTIM2.png"
-                alt="Coop Catering"
-                width={240}
-                height={240}
-                className="w-40 h-40 object-contain"
-              />
-              <div className="text-center">
-                <p className="font-mockeyclown text-2xl text-white-outline mb-3">Let us cater your next event!</p>
-                <button 
+        <div className="px-6 mb-8">
+          <div className="bg-yellow-100 rounded-2xl p-6 shadow-lg">
+            <div className="flex items-center justify-between">
+              <div className="flex-1">
+                <Image
+                  src="/coopTIM2.png"
+                  alt="Coop Catering"
+                  width={300}
+                  height={200}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="flex-1 text-center">
+                <p className="font-mockeyclown text-2xl text-white-outline mb-4">
+                  Let us cater your next event!
+                </p>
+                <button
                   onClick={() => setShowCateringForm(true)}
-                  className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-red-600 hover:to-red-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                  className="bg-red-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-red-700 transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   Book
                 </button>
@@ -127,7 +133,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/coop-combo.png"
+                    src="/coop-combo.png"
                     alt="Coop Combo"
                     width={400}
                     height={192}
@@ -146,7 +152,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/cluckbox.png"
+                    src="/cluckbox.png"
                     alt="The Cluck Box"
                     width={400}
                     height={192}
@@ -165,7 +171,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/tendieswaffle.png"
+                    src="/tendieswaffle.png"
                     alt="Tendies & a Waffle"
                     width={400}
                     height={192}
@@ -184,7 +190,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/coopmelt.png"
+                    src="/coopmelt.png"
                     alt="Coop Melt"
                     width={400}
                     height={192}
@@ -203,7 +209,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/BBQSANDO.png"
+                    src="/BBQSANDO.png"
                     alt="BBQ Chicken Sandwich"
                     width={400}
                     height={192}
@@ -222,7 +228,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/spicysando.png"
+                    src="/spicysando.png"
                     alt="Spicy Chicken Sandwich"
                     width={400}
                     height={192}
@@ -241,7 +247,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/classicsando.png"
+                    src="/classicsando.png"
                     alt="Classic Chicken Sandwich"
                     width={400}
                     height={192}
@@ -260,7 +266,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/buffaloranchfries.png"
+                    src="/buffaloranchfries.png"
                     alt="Buffalo Ranch Fries"
                     width={400}
                     height={192}
@@ -279,7 +285,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/tucsonfries.png"
+                    src="/tucsonfries.png"
                     alt="Tucson Fries"
                     width={400}
                     height={192}
@@ -298,7 +304,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/elotefries.png"
+                    src="/elotefries.png"
                     alt="Elote Fries"
                     width={400}
                     height={192}
@@ -317,7 +323,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/Bourdain.png"
+                    src="/Bourdain.png"
                     alt="Bourdain Burger"
                     width={400}
                     height={192}
@@ -336,7 +342,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Images/mac1.png"
+                    src="/mac1.png"
                     alt="Mac and Cheese"
                     width={500}
                     height={300}
@@ -361,21 +367,21 @@ Additional Information: ${cateringForm.additionalInfo}
                 <h3 className="font-margarine text-2xl mb-4 text-blue-800">Beverages</h3>
                 <div className="flex items-center justify-center space-x-6 mb-4">
                   <Image
-                    src="/Images/drpng.png"
+                    src="/drpng.png"
                     alt="Drink"
                     width={80}
                     height={80}
                     className="w-16 h-16 object-contain"
                   />
                   <Image
-                    src="/Images/starry.png"
+                    src="/starry.png"
                     alt="Starry"
                     width={80}
                     height={80}
                     className="w-16 h-16 object-contain"
                   />
                   <Image
-                    src="/Images/pepsi.png"
+                    src="/pepsi.png"
                     alt="Pepsi"
                     width={80}
                     height={80}
