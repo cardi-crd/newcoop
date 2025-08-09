@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url("leaflet/dist/leaflet.css");
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Josefin+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+@font-face {
+  font-family: 'Alphasmoke';
+  src: url('/fonts/AlphaSmoke.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mockeyclown';
+  src: url('/fonts/Mockeyclown 1.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── enable smooth anchor scrolling ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #A3DAF3;
+  }
+}
+
+/* Removed invalid custom font class. Use inline style or Tailwind config for font-family. */
+
+.font-jockey {
+  font-family: 'Jockey One', sans-serif;
+}
+.font-josefin {
+  font-family: 'Josefin Slab', serif;
+}
+.font-margarine {
+  font-family: 'Margarine', cursive;
+}
+.font-alphasmoke {
+  font-family: 'Alphasmoke', cursive;
+}
+
+.font-mockeyclown {
+  font-family: 'Mockeyclown', cursive;
+}
+
+.text-white-outline {
+  color: white;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+/* … your other custom styles … */
+
+@keyframes revealLogo {
+  from { height: 100%; }
+  to { height: 0%; }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "coop-main",
+    "name": "Coop x Cow Pig",
+    "address": "429 N 4th Ave, Tucson, AZ 85713",
+    "services": ["DINE-IN", "CARRY-OUT", "CATERING"],
+    "hours": {
+      "Mon-Fri": "11am - 9pm",
+      "Sat-Sun": "10am - 10pm"
+    },
+    "phone": "+1 (520) 526-2385",
+    "lat": 32.2272159555897,
+    "lng": -110.96577007325331,
+    "placeId": "ChIJi39eSttx1oYRHwzIZsr-JxI"
+  }
+]
