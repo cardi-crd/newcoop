@@ -52,7 +52,7 @@ Additional Information: ${cateringForm.additionalInfo}
         <div className="text-center pt-2 pb-6">
           <Link href="/" className="inline-block hover:scale-105 transition-transform duration-200 cursor-pointer">
             <Image
-              src="/cooplogo.png"
+              src="/coopLogo.png"
               alt="Coop Logo - Click to go home"
               width={400}
               height={160}
@@ -68,7 +68,7 @@ Additional Information: ${cateringForm.additionalInfo}
             <div className="flex items-center justify-between">
               <div className="flex-1">
                 <Image
-                  src="/coopTIM2.png"
+                  src="/cooptim2.png"
                   alt="Coop Catering"
                   width={300}
                   height={200}
@@ -209,7 +209,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/BBQSANDO.png"
+                    src="/bbqsando.png"
                     alt="BBQ Chicken Sandwich"
                     width={400}
                     height={192}
@@ -323,7 +323,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/Bourdain.png"
+                    src="/bourdain.png"
                     alt="Bourdain Burger"
                     width={400}
                     height={192}
