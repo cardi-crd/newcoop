@@ -94,8 +94,8 @@ export default function Navbar() {
             aria-label="Go to homepage"
           >
             <Image
-              src="/images/lumbre-pizza-logo-original.png"
-              alt="Lumbre Logo"
+              src="/images/cooplogo.png"
+              alt="Coop Logo"
               width={120}
               height={40}
               priority
