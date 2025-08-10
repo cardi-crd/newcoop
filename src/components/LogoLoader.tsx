@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const LOGO_SRC = '/coop logo no background.png';
+const LOGO_SRC = '/images/coop-logo-no-background.png';
 
 const LogoLoader: React.FC<{ onFinish?: () => void }> = ({ onFinish }) => {
   const overlayRef = useRef<HTMLDivElement>(null);

@@ -49,7 +49,7 @@ export default function LeafletMap({ stores, focusedStoreId }: Props) {
       setL(leaflet);
       setCustomIcon(
         new leaflet.Icon({
-          iconUrl: "/coopLogo.png",
+          iconUrl: "/images/coopLogo.png",
           iconSize: [60, 60],
           iconAnchor: [30, 60],
           popupAnchor: [0, -60],

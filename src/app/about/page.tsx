@@ -34,7 +34,7 @@ export default function AboutPage() {
       <div className="text-center pt-2 pb-6">
         <Link href="/" className="inline-block hover:scale-105 transition-transform duration-200 cursor-pointer">
           <Image
-            src="/coopLogo.png"
+            src="/images/coopLogo.png"
             alt="Coop Logo - Click to go home"
             width={400}
             height={160}
@@ -49,7 +49,7 @@ export default function AboutPage() {
       {/* Owners Photo */}
       <div className="mb-8">
         <Image
-          src="/thomas-sarah.jpeg"
+          src="/images/thomas-sarah.jpeg"
           alt="Thomas and Sarah - Owners of Coop by Cowpig"
           width={400}
           height={300}
