@@ -34,7 +34,7 @@ export default function AboutPage() {
       <div className="text-center pt-2 pb-6">
         <Link href="/" className="inline-block hover:scale-105 transition-transform duration-200 cursor-pointer">
           <Image
-            src="/images/coopLogo.png"
+            src="/images/cooplogo.png"
             alt="Coop Logo - Click to go home"
             width={400}
             height={160}
