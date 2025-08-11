@@ -80,7 +80,7 @@ export default function AboutPage() {
           <h3 className="font-bold font-['Irish_Grover',cursive] text-red-700 mb-4">Follow Us</h3>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://www.tiktok.com/@coopxcowpig"
+              href="https://www.tiktok.com/@coopbycowpig?is_from_webapp=1&sender_device=pc"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
@@ -88,7 +88,7 @@ export default function AboutPage() {
               TikTok
             </a>
             <a
-              href="https://www.instagram.com/coopxcowpig"
+              href="https://www.instagram.com/coopbycowpig/reels/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
