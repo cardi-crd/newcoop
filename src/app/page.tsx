@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTheme } from "../components/ThemeContext";
 
 export default function Home() {
@@ -18,6 +18,36 @@ export default function Home() {
     eventType: '',
     additionalInfo: ''
   });
+
+  // Swipe functionality
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe && activeSection === 'food') {
+      setActiveSection('drinks');
+    } else if (isRightSwipe && activeSection === 'drinks') {
+      setActiveSection('food');
+    }
+  };
 
   const handleCateringSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -92,7 +122,12 @@ Additional Information: ${cateringForm.additionalInfo}
 
         {/* Menu Toggle */}
         <div className="px-6 mb-4">
-          <div className="bg-gray-200 rounded-full p-1 shadow-inner w-48 mx-auto">
+          <div 
+            className="bg-gray-200 rounded-full p-1 shadow-inner w-48 mx-auto"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
             <div className="relative flex">
               <button
                 onClick={() => setActiveSection('food')}
