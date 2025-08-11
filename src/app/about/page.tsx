@@ -49,7 +49,7 @@ export default function AboutPage() {
       {/* Owners Photo */}
       <div className="mb-8">
         <Image
-          src="/images/thomas-sarah.jpeg"
+          src="/images/tomsarah.jpeg"
           alt="Thomas and Sarah - Owners of Coop by Cowpig"
           width={400}
           height={300}
