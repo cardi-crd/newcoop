@@ -68,7 +68,7 @@ Additional Information: ${cateringForm.additionalInfo}
             <div className="flex items-center justify-between">
               <div className="flex-1">
                 <Image
-                  src="/images/cooptim2.png"
+                  src="/images/cowpigtruck.png"
                   alt="Coop Catering"
                   width={300}
                   height={200}
