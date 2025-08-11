@@ -517,8 +517,8 @@ Additional Information: ${cateringForm.additionalInfo}
 
         {/* Catering Form Modal */}
         {showCateringForm && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-2xl p-4 max-w-sm w-full shadow-2xl max-h-[85vh] overflow-y-auto">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pb-24">
+            <div className="bg-white rounded-2xl p-4 max-w-sm w-full shadow-2xl max-h-[80vh] overflow-y-auto">
               <div className="flex justify-between items-center mb-3">
                 <h2 className="font-margarine text-lg text-gray-800">Catering Request</h2>
                 <button
@@ -529,7 +529,7 @@ Additional Information: ${cateringForm.additionalInfo}
                 </button>
               </div>
               
-              <form onSubmit={handleCateringSubmit} className="space-y-2">
+              <form onSubmit={handleCateringSubmit} className="space-y-2 pb-4">
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 mb-1">Name *</label>
                   <input
@@ -629,7 +629,7 @@ Additional Information: ${cateringForm.additionalInfo}
                 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-2 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transition-all duration-200 shadow-md hover:shadow-lg text-sm"
+                  className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transition-all duration-200 shadow-md hover:shadow-lg text-sm mt-4"
                 >
                   Send Catering Request
                 </button>
