@@ -74,12 +74,12 @@ Additional Information: ${cateringForm.additionalInfo}
   const bgClass = theme === 'bagel' ? 'bg-[#46bafc]' : 'bg-black';
 
   return (
-    <div className={`min-h-screen ${bgClass} flex flex-col items-center py-16 px-4 pb-32`}>
+    <div className={`min-h-screen ${bgClass} flex flex-col items-center py-8 px-4 pb-32`}>
       {/* Main Container */}
       <div className="max-w-md mx-auto min-h-screen">
         
         {/* Coop Logo */}
-        <div className="text-center pt-2 pb-6">
+        <div className="text-center pt-1 pb-6">
           <Link href="/" className="inline-block hover:scale-105 transition-transform duration-200 cursor-pointer">
             <Image
               src="/images/cooplogo.png"
