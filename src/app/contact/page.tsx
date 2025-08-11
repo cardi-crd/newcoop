@@ -9,7 +9,7 @@ export default function ContactPage() {
   // Example data (replace with your real info)
   const store = {
     id: "contact-location",
-    name: "Coop by Cowpig",
+    name: "Coop by CowPig",
     address: "429 N 4th Ave, Tucson, AZ 85713",
     hours: [
       "Friday: 11am - 10pm",

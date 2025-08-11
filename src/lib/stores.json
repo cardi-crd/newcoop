@@ -1,7 +1,7 @@
 [
   {
     "id": "coop-main",
-    "name": "Coop x Cow Pig",
+    "name": "Coop by CowPig",
     "address": "429 N 4th Ave, Tucson, AZ 85713",
     "services": ["DINE-IN", "CARRY-OUT", "CATERING"],
     "hours": {

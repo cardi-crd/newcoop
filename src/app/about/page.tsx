@@ -8,7 +8,7 @@ export default function AboutPage() {
   // Business information
   const store = {
     id: "about-location",
-    name: "Coop by Cowpig",
+    name: "Coop by CowPig",
     address: "429 N 4th Ave, Tucson, AZ 85713",
     hours: [
       "Friday: 11am - 10pm",
@@ -67,6 +67,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-bold font-['Irish_Grover',cursive] text-red-700">Address</h3>
           <p>{store.address}</p>
+          <p className="text-sm text-blue-600 mt-2 font-semibold">Come check out our new outside patio!</p>
         </div>
         <div>
           <h3 className="font-bold font-['Irish_Grover',cursive] text-red-700">Hours</h3>
