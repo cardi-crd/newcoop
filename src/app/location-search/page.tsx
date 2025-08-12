@@ -66,7 +66,8 @@ export default function LocationSearchPage() {
             onClick={() => handleLocationClick(s.id)}
           >
             <h2 className="font-margarine text-xl text-gray-800 mb-2">{s.name}</h2>
-            <p className="text-gray-600 mb-4">{s.address}</p>
+            <p className="text-gray-600 mb-2">{s.address}</p>
+            <p className="text-sm text-blue-600 mb-4 font-semibold">Come check out our new outside patio!</p>
             
             {/* Hours */}
             <div className="mb-4">

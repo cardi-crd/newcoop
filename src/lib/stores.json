@@ -5,8 +5,13 @@
     "address": "429 N 4th Ave, Tucson, AZ 85713",
     "services": ["DINE-IN", "CARRY-OUT", "CATERING"],
     "hours": {
-      "Mon-Fri": "11am - 9pm",
-      "Sat-Sun": "10am - 10pm"
+      "Monday": "Closed",
+      "Tuesday": "11am - 8pm",
+      "Wednesday": "11am - 8pm",
+      "Thursday": "11am - 8pm",
+      "Friday": "11am - 10pm",
+      "Saturday": "11am - 10pm",
+      "Sunday": "11am - 5pm"
     },
     "phone": "+1 (520) 526-2385",
     "lat": 32.2272159555897,
