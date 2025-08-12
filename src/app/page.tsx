@@ -263,7 +263,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/images/spicysando.png"
+                    src="/images/newspicysando.png"
                     alt="Spicy Chicken Sandwich"
                     width={400}
                     height={192}
@@ -282,7 +282,7 @@ Additional Information: ${cateringForm.additionalInfo}
               <div className="text-center">
                 <div className="mb-4">
                   <Image
-                    src="/images/classicsando.png"
+                    src="/images/newclassicsando.png"
                     alt="Classic Chicken Sandwich"
                     width={400}
                     height={192}
@@ -373,24 +373,7 @@ Additional Information: ${cateringForm.additionalInfo}
                 </div>
               </div>
 
-              {/* Mac and Cheese */}
-              <div className="text-center">
-                <div className="mb-4">
-                  <Image
-                    src="/images/mac1.png"
-                    alt="Mac and Cheese"
-                    width={500}
-                    height={300}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
-                  <h3 className="font-margarine text-xl mb-3 text-gray-800">Mac and Cheese</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    A classic mac and cheese with perfectly cooked pasta and a creamy blend of white cheddar and sharp cheddar cheeses
-                  </p>
-                </div>
-              </div>
+
 
             </div>
           )}
