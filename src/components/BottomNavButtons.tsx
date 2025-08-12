@@ -7,7 +7,7 @@ export default function BottomNavButtons() {
   const pathname = usePathname();
   
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-gray-200 z-50 lg:hidden">
+    <div className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-gray-200 z-50">
       <div className="max-w-md mx-auto flex justify-around py-4">
         <Link
           href="/"
