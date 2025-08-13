@@ -76,7 +76,7 @@ Additional Information: ${cateringForm.additionalInfo}
   return (
     <div className={`min-h-screen ${bgClass} flex flex-col items-center py-8 px-4 pb-32`}>
       {/* Main Container */}
-      <div className="max-w-md mx-auto min-h-screen">
+      <div className="w-full max-w-7xl mx-auto min-h-screen">
         
         {/* Coop Logo */}
         <div className="text-center pt-1 pb-6">
@@ -93,7 +93,7 @@ Additional Information: ${cateringForm.additionalInfo}
         </div>
 
         {/* Catering Section */}
-        <div className="px-6 mb-8">
+        <div className="px-6 mb-8 max-w-2xl mx-auto">
           <div className="bg-yellow-100 rounded-2xl p-6 shadow-lg">
             <div className="flex items-center justify-between">
               <div className="flex-1">
@@ -121,7 +121,7 @@ Additional Information: ${cateringForm.additionalInfo}
         </div>
 
         {/* Menu Toggle */}
-        <div className="px-6 mb-4">
+        <div className="px-6 mb-4 max-w-md mx-auto">
           <div 
             className="bg-gray-200 rounded-full p-1 shadow-inner w-48 mx-auto"
             onTouchStart={onTouchStart}
@@ -162,20 +162,19 @@ Additional Information: ${cateringForm.additionalInfo}
         {/* Menu Grid */}
         <div className="px-6 pb-24">
           {activeSection === 'food' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
               
               {/* Coop Combo */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/coop-combo.png"
                     alt="Coop Combo"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Coop Combo</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Three chicken tenders—classic, spicy, or lemon pepper—served with crispy fries, Texas toast, our house-made buttermilk ranch, and our signature CowPig sauce
@@ -184,17 +183,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* The Cluck Box */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/cluckbox.png"
                     alt="The Cluck Box"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">The Cluck Box</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Our menu sampler: The Cluck Box, includes your choice of sandwich, two chicken tenders, a mini order of buffalo fries or a waffle, and a drink. Perfect for sharing!
@@ -203,17 +201,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Tendies & a Waffle */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/tendieswaffle.png"
                     alt="Tendies & a Waffle"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Tendies & a Waffle</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Our take on chicken and waffles: Three spicy or classic chicken tenders served with a freshly made waffle, topped with butter and your choice of maple or spicy chiltepin agave syrup
@@ -222,17 +219,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Coop Melt */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/coopmelt.png"
                     alt="Coop Melt"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Coop Melt</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Marinated chicken paired with roasted hatch green chiles, crispy bacon, melted onions, our signature CowPig sauce and cheddar cheese, all served up on some buttery Texas toast
@@ -241,17 +237,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* BBQ Chicken Sandwich */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/bbqsando.png"
                     alt="BBQ Chicken Sandwich"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">BBQ Chicken Sandwich</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Marinated chicken topped with crispy bacon, tangy BBQ sauce, and melted cheddar cheese, served on buttery Texas toast.
@@ -260,17 +255,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Spicy Chicken Sandwich */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/newspicysando.png"
                     alt="Spicy Chicken Sandwich"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Spicy Chicken Sandwich</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Marinated chicken topped with rotating hot sauce, fresh pico de gallo, melted cheese, and served with a side of crispy fries
@@ -279,17 +273,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Classic Chicken Sandwich */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/newclassicsando.png"
                     alt="Classic Chicken Sandwich"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Classic Chicken Sandwich</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Marinated chicken with shredded lettuce, pickles, melted cheese, and CowPig sauce, all served on buttery Texas toast
@@ -298,17 +291,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Buffalo Ranch Fries */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/buffaloranchfries.png"
                     alt="Buffalo Ranch Fries"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Buffalo Ranch Fries</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     Crispy fries smothered with chopped Coop chicken tenders, cheddar cheese, tangy buffalo sauce, house-made buttermilk ranch, and CowPig sauce
@@ -317,17 +309,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Tucson Fries */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/tucsonfries.png"
                     alt="Tucson Fries"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Tucson Fries</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     A hearty serving of crispy fries, loaded with chopped chicken, hatch green chiles, crispy bacon, melted onions, cheddar cheese, our house-made buttermilk ranch, and CowPig sauce.
@@ -336,17 +327,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Elote Fries */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/elotefries.png"
                     alt="Elote Fries"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Elote Fries</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     A Crispy bed of fries topped with roasted sweet corn, roasted hatch green chiles, melted onions, cheddar cheese, our in house-made buttermilk ranch, and our specialty CowPig sauce
@@ -355,17 +345,16 @@ Additional Information: ${cateringForm.additionalInfo}
               </div>
 
               {/* Bourdain Burger */}
-              <div className="text-center">
-                <div className="mb-4">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="aspect-video relative">
                   <Image
                     src="/images/bourdain.png"
                     alt="Bourdain Burger"
-                    width={400}
-                    height={192}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="bg-white rounded-2xl p-6 md:px-6 lg:px-7 shadow-lg">
+                <div className="p-6">
                   <h3 className="font-margarine text-xl mb-3 text-gray-800">Bourdain Burger</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     A double cheeseburger featuring white cheddar, sharp cheddar, crispy bacon, and our signature CowPig sauce, all served on buttery Texas toast
@@ -373,13 +362,11 @@ Additional Information: ${cateringForm.additionalInfo}
                 </div>
               </div>
 
-
-
             </div>
           )}
 
           {activeSection === 'drinks' && (
-            <div className="space-y-8">
+            <div className="max-w-4xl mx-auto space-y-8">
               {/* Beverage Options */}
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6 shadow-lg border border-blue-200">
                 <h3 className="font-margarine text-2xl mb-4 text-blue-800">Beverages</h3>
